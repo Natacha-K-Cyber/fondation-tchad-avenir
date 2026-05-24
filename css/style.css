@@ -1837,6 +1837,8 @@ a:hover { color: var(--color-primary-dark); }
 @media (max-width: 1024px) {
     .impact-split { grid-template-columns: 1fr; gap: 40px; }
     .impact-image-block { grid-template-columns: 1fr 1fr; }
+    .impact-image-block { order: 2; }   /* photos après le texte sur mobile */
+    .impact-text-block  { order: 1; }
     .emotion-image--1 { min-height: 300px; grid-row: auto; }
     .fondation-mission { grid-template-columns: 1fr; gap: 40px; }
     .don-grid, .don-grid--3 { grid-template-columns: 1fr; }
@@ -1923,12 +1925,13 @@ a:hover { color: var(--color-primary-dark); }
     .logo-icon-img { height: 44px; }
     .header.scrolled .logo-icon-img { height: 38px; }
 
-    .section { padding: 70px 0; }
+    .section { padding: 52px 0; }
+    .section-tchad { padding: 52px 0; }
 
     .stats-bar {
         flex-direction: column;
         gap: 24px;
-        padding: 36px 32px;
+        padding: 36px 24px;
     }
     .stat-divider {
         width: 60px;
@@ -1943,8 +1946,17 @@ a:hover { color: var(--color-primary-dark); }
 
     .temoignage-card { height: 380px; }
 
-    .conseil-row { gap: 16px; }
-    .conseil-member { width: 150px; padding: 20px 16px; }
+    /* Conseil — 2 colonnes sur mobile */
+    .conseil-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        justify-items: center;
+    }
+    .conseil-member { width: 100%; padding: 20px 14px; }
+
+    /* Expo affiche — réduire la hauteur sur mobile */
+    .actu-card--featured .actu-image { height: 260px; }
 
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
 
@@ -1954,8 +1966,8 @@ a:hover { color: var(--color-primary-dark); }
         padding: 28px;
     }
 
-    .don-hero { min-height: 280px; }
-    .don-hero-content { padding: 60px 20px; }
+    .don-hero { min-height: 260px; }
+    .don-hero-content { padding: 44px 20px; }
 
     .form-row { grid-template-columns: 1fr; }
 }
@@ -1966,9 +1978,16 @@ a:hover { color: var(--color-primary-dark); }
     .btn-lg { width: 100%; max-width: 300px; }
     .impact-image-block { grid-template-columns: 1fr; }
     .emotion-image--1 { min-height: 250px; }
-    .conseil-row { flex-direction: column; align-items: center; }
-    .conseil-member { width: 100%; max-width: 220px; }
+    /* Conseil — garder 2 colonnes même sur très petit écran */
+    .conseil-row { grid-template-columns: repeat(2, 1fr); }
+    .conseil-member { max-width: none; }
     .mission-values-row { justify-content: center; }
+    /* Galerie — 1 colonne sur très petit écran */
+    .galerie-grid { grid-template-columns: 1fr; }
+    .galerie-item--wide { grid-column: span 1; }
+    /* Logo sur très petit écran */
+    .logo-name { font-size: 0.78rem; }
+    .logo-icon-img { height: 36px; }
 }
 
 
