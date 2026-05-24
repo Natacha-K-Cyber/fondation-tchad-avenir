@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" fill="none">
+  <!-- Silhouette du Tchad -->
+  <path d="M100 8 L115 12 L130 18 L142 28 L155 25 L165 30 L170 42 L175 55 L178 70 L180 85 L178 98 L172 110 L168 125 L170 140 L165 155 L158 168 L148 178 L140 190 L135 205 L128 218 L118 228 L108 238 L100 248 L92 258 L85 265 L78 268 L70 265 L62 258 L55 248 L50 238 L48 225 L50 210 L55 198 L52 185 L48 170 L42 158 L38 145 L35 130 L33 115 L32 100 L30 88 L28 75 L30 62 L35 50 L42 40 L52 32 L62 25 L72 18 L82 12 Z"
+        fill="#D4A843" stroke="#B8912A" stroke-width="2"/>
+  <!-- Lac Tchad -->
+  <ellipse cx="52" cy="145" rx="12" ry="8" fill="#4AADCB" opacity="0.8"/>
+  <!-- N'Djaména point -->
+  <circle cx="58" cy="160" r="5" fill="#1B4D3E"/>
+  <circle cx="58" cy="160" r="2.5" fill="#FFFFFF"/>
+</svg>

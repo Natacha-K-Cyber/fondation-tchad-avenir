@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fondation Tchad-Avenir — Bourses d'études et d'apprentissage pour jeunes tchadiens de milieu modeste. Depuis 2004, plus de 600 bourses accordées.">
+    <meta name="keywords" content="Tchad, fondation, bourses, éducation, formation, don, Genève, Suisse">
+    <title>Fondation Tchad-Avenir — Investir dans la jeunesse, construire l'avenir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo-tchad.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img class="logo-icon-img" src="images/logo-tchad.png" alt="Carte du Tchad">
+                <div class="logo-text">
+                    <span class="logo-name">Fondation Tchad-Avenir</span>
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#impact" class="nav-link">Résultats</a>
+                <a href="#temoignages" class="nav-link">Témoignages</a>
+                <a href="#actions" class="nav-link">Actions</a>
+                <a href="#actualites" class="nav-link">Actualités</a>
+                <div class="nav-item nav-item--dropdown">
+                    <a href="#fondation" class="nav-link nav-link--has-dropdown">La fondation <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="flex-shrink:0"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="nav-dropdown">
+                        <a href="#tchad" class="nav-dropdown-link">Connaître le Tchad</a>
+                        <a href="#fondation" class="nav-dropdown-link">La fondation</a>
+                    </div>
+                </div>
+                <a href="#don" class="nav-link nav-link--cta">Faire un don</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================================
+         1. HERO — Split 2/3 image + 1/3 panneau bleu
+         ============================================ -->
+    <section class="hero hero--split" id="accueil">
+
+        <!-- 2/3 IMAGE — slider + navigation -->
+        <div class="hero-image-side">
+            <div class="hero-slider" id="hero-slider">
+                <div class="hero-slide active">
+                    <img src="images/boursiere-chanceline.jpeg" alt="Chanceline Mitamem, boursière en électricité bâtiment" loading="eager">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/boursiere-viviane.jpeg" alt="Viviane Haoua, boursière en maintenance informatique et électronique" loading="eager">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/boursier-bealem.jpeg" alt="Bealem Aristide, boursier en chimie, doctorant" loading="eager">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/boursiere-tiandje.jpeg" alt="Tiandje Nicole, boursière" loading="lazy">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/Flyer2.Ch%202026%20TCHAD_image4.jpeg" alt="Boursière installant une antenne satellite" loading="lazy">
+                </div>
+            </div>
+
+            <div class="hero-image-overlay"></div>
+
+            <div class="hero-slider-dots" id="hero-dots">
+                <button class="slider-dot active" data-slide="0" aria-label="Image 1"></button>
+                <button class="slider-dot" data-slide="1" aria-label="Image 2"></button>
+                <button class="slider-dot" data-slide="2" aria-label="Image 3"></button>
+                <button class="slider-dot" data-slide="3" aria-label="Image 4"></button>
+                <button class="slider-dot" data-slide="4" aria-label="Image 5"></button>
+            </div>
+            <button class="hero-arrow hero-arrow--prev" id="slider-prev" aria-label="Image précédente">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="hero-arrow hero-arrow--next" id="slider-next" aria-label="Image suivante">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg>
+            </button>
+        </div>
+
+        <!-- 1/3 PANNEAU BLEU — titre, stats, boutons -->
+        <div class="hero-text-side">
+            <div class="hero-text-inner">
+                <span class="hero-label">Depuis 2004</span>
+                <h1 class="hero-title">Chaque bourse<br>change une vie</h1>
+                <p class="hero-subtitle">Des bourses de formation professionnelle pour les jeunes tchadiens de milieu modeste</p>
+
+                <div class="hero-actions">
+                    <a href="#don" class="btn-hero-don">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        Faire un don
+                    </a>
+                    <a href="#impact" class="btn-hero-results">
+                        Nos résultats
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ============================================
+         2. CHIFFRES — Prouver l'impact immédiatement
+         ============================================ -->
+    <section class="section section-stats" id="impact">
+        <div class="container">
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-number" data-target="600">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Bourses accordées depuis 2004</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="300">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Jeunes formés depuis 2004</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="30">0</span>
+                    <span class="stat-label">Boursières et boursiers chaque année</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Années d'engagement</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         3. IMPACT VISUEL — Images + résultats
+         ============================================ -->
+    <section class="section section-impact-visual">
+        <div class="container">
+            <div class="impact-split">
+                <div class="impact-image-block">
+                    <div class="emotion-image emotion-image--1">
+                        <img src="images/impact-electricienne.jpg" alt="Boursière en électricité bâtiment" loading="lazy">
+                        <div class="image-caption">Électricité bâtiment</div>
+                    </div>
+                    <div class="emotion-image emotion-image--2">
+                        <img src="images/Flyer2.Ch%202026%20TCHAD_image2.jpeg" alt="Boursier en plomberie sanitaire" loading="lazy">
+                        <div class="image-caption">Plomberie sanitaire</div>
+                    </div>
+                </div>
+                <div class="impact-text-block">
+                    <span class="section-label">Résultats 2024-2025</span>
+                    <h2 class="section-title">Des vies transformées, des résultats concrets</h2>
+                    <div class="result-list">
+                        <div class="result-item" data-aos>
+                            <div class="result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>28 boursières et boursiers soutenus</strong>
+                                <p>17 filles et 11 garçons accompagnés cette année</p>
+                            </div>
+                        </div>
+                        <div class="result-item" data-aos>
+                            <div class="result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>14 diplômés du CTAP</strong>
+                                <p>Tous ont terminé leur formation avec succès</p>
+                            </div>
+                        </div>
+                        <div class="result-item" data-aos>
+                            <div class="result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>8 licences obtenues</strong>
+                                <p>Tous les étudiants de 3e année diplômés</p>
+                            </div>
+                        </div>
+                        <div class="result-item" data-aos>
+                            <div class="result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>Priorité aux filles et aux orphelins</strong>
+                                <p>La sélection privilégie les candidates les plus jeunes et les moins favorisées</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         4. DES VIES TRANSFORMÉES — Témoignages
+         ============================================ -->
+    <section class="section section-temoignages" id="temoignages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nos boursières et boursiers</span>
+                <h2 class="section-title">Elles et ils racontent leur parcours</h2>
+            </div>
+            <div class="temoignages-carousel">
+
+                <!-- 1. Angeline Allayamal (F) -->
+                <div class="temoignage-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/boursiere-angeline.jpeg" alt="Angeline Allayamal, boursière en froid et climatisation" loading="lazy">
+                            <div class="card-front-overlay"></div>
+                            <div class="card-front-name">
+                                <strong>Angeline Allayamal</strong>
+                                <span>Froid et climatisation</span>
+                            </div>
+                            <div class="card-front-hint">Lire le témoignage →</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="temoignage-quote-mark">&laquo;</div>
+                            <p class="temoignage-text">Grâce à la bourse de Tchad-Avenir, j'ai pu me former en froid et climatisation. Aujourd'hui, je répare des réfrigérateurs et des systèmes de climatisation. C'est un métier d'avenir au Tchad et je suis fière d'y contribuer.</p>
+                            <div class="temoignage-author">
+                                <strong>Angeline Allayamal</strong>
+                                <span>Boursière, Froid et climatisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Angouloumou Alouma (M) -->
+                <div class="temoignage-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/boursier-msf-camp.jpeg" alt="Angouloumou Alouma, Responsable Unité de Nutrition MSF Suisse, camp d'Iriba" loading="lazy">
+                            <div class="card-front-overlay"></div>
+                            <div class="card-front-name">
+                                <strong>Angouloumou Alouma</strong>
+                                <span>Nutritionniste — MSF Suisse, Iriba</span>
+                            </div>
+                            <div class="card-front-hint">Lire le témoignage →</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="temoignage-quote-mark">&laquo;</div>
+                            <p class="temoignage-text">Issu d'une famille pauvre, la fondation Tchad-Avenir m'a offert la bourse d'étude qui m'a permis de faire des études en nutrition. Je suis actuellement Responsable de l'Unité de Nutrition Médecins Sans Frontières (MSF) Suisse au Tchad. Je travaille au Camp de Réfugiés Soudanais à Iriba. Je suis fier de mon travail et de ce que la fondation Tchad-Avenir m'a permis de devenir.</p>
+                            <div class="temoignage-author">
+                                <strong>Angouloumou Alouma</strong>
+                                <span>Boursier, Nutritionniste — Responsable Unité de Nutrition, MSF Suisse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Viviane Haoua (F) -->
+                <div class="temoignage-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/boursiere-viviane.jpeg" alt="Viviane Haoua, boursière en maintenance informatique et électronique" loading="lazy">
+                            <div class="card-front-overlay"></div>
+                            <div class="card-front-name">
+                                <strong>Viviane Haoua</strong>
+                                <span>Maintenance informatique et électronique</span>
+                            </div>
+                            <div class="card-front-hint">Lire le témoignage →</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="temoignage-quote-mark">&laquo;</div>
+                            <p class="temoignage-text">J'étais terrifiée d'être une femme sans ressources dans ce milieu. Grâce à Tchad-Avenir, j'ai pu me former en maintenance informatique et électronique. Aujourd'hui, je répare des équipements et je peux subvenir aux besoins de ma famille.</p>
+                            <div class="temoignage-author">
+                                <strong>Viviane Haoua</strong>
+                                <span>Boursière, Maintenance informatique et électronique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Adandi Akerte (M) -->
+                <div class="temoignage-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/boursier-adandi.jpeg" alt="Adandi Akerte, boursier en charpente métallique" loading="lazy">
+                            <div class="card-front-overlay"></div>
+                            <div class="card-front-name">
+                                <strong>Adandi Akerte</strong>
+                                <span>Charpente métallique</span>
+                            </div>
+                            <div class="card-front-hint">Lire le témoignage →</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="temoignage-quote-mark">&laquo;</div>
+                            <p class="temoignage-text">Orphelin, je ne savais pas si je pourrais jamais apprendre un métier. Avec le soutien de Tchad-Avenir et le kit d'outils professionnels reçu à la fin de ma formation, j'ai pu ouvrir mon propre atelier de charpente métallique. Aujourd'hui, j'emploie six personnes.</p>
+                            <div class="temoignage-author">
+                                <strong>Adandi Akerte</strong>
+                                <span>Boursier, Charpente métallique — atelier de 6 personnes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Boursière orpheline informatique (F) -->
+                <div class="temoignage-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/boursiere-informatique-bureau.jpeg" alt="Boursière orpheline en maintenance informatique et électronique, CTAP" loading="lazy">
+                            <div class="card-front-overlay"></div>
+                            <div class="card-front-name">
+                                <strong>Boursière, CTAP N'Djaména</strong>
+                                <span>Maintenance informatique et électronique</span>
+                            </div>
+                            <div class="card-front-hint">Lire le témoignage →</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="temoignage-quote-mark">&laquo;</div>
+                            <p class="temoignage-text">Je suis orpheline de père et mère. J'ai obtenu mon diplôme en maintenance informatique et électronique grâce à la bourse de la fondation Tchad-Avenir. J'ai choisi cette filière car il y a une grande possibilité de trouver un emploi et aussi d'ouvrir sa propre boîte de dépannage. Depuis deux ans je peux gagner au moins 2 000 F CFA par jour, ce qui me rend indépendante financièrement.</p>
+                            <div class="temoignage-author">
+                                <strong>Boursière, CTAP N'Djaména</strong>
+                                <span>Boursière orpheline, Maintenance informatique et électronique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Ngodji Frédéric (M) -->
+                <div class="temoignage-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/photos1_image9.jpeg" alt="Ngodji Frédéric, mécanicien automobile, N'Djaména" loading="lazy">
+                            <div class="card-front-overlay"></div>
+                            <div class="card-front-name">
+                                <strong>Ngodji Frédéric</strong>
+                                <span>Mécanique automobile</span>
+                            </div>
+                            <div class="card-front-hint">Lire le témoignage →</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="temoignage-quote-mark">&laquo;</div>
+                            <p class="temoignage-text">Orphelin de père et de mère, je ne pouvais pas espérer faire des études universitaires par manque de moyens. J'ai décidé de faire la mécanique automobile au CTAP. Aujourd'hui, grâce à cette formation, je gagne quotidiennement au moins 3 000 F CFA par jour, ce qui me permet d'aider mes petits frères et d'être indépendant financièrement.</p>
+                            <div class="temoignage-author">
+                                <strong>Ngodji Frédéric</strong>
+                                <span>Boursier orphelin, Mécanique automobile — CTAP N'Djaména</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         5. NOS ACTIONS — Ce que nous faisons
+         ============================================ -->
+    <section class="section section-actions" id="actions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nos actions</span>
+                <h2 class="section-title">Deux piliers pour construire l'avenir</h2>
+                <p class="section-desc">Formations en santé et métiers techniques : des compétences concrètes pour une autonomie durable</p>
+            </div>
+            <div class="actions-grid">
+                <!-- CTAP en premier — image femme -->
+                <div class="action-card action-card--ctap">
+                    <div class="action-card-image">
+                        <img src="images/photos1_image1.jpg" alt="Boursière en formation électricité bâtiment au CTAP de N'Djaména" loading="lazy">
+                    </div>
+                    <div class="action-card-body">
+                        <h3>Formations techniques au CTAP</h3>
+                        <p>Partenariat avec le Centre Technique d'Apprentissage et de Perfectionnement de N'Djaména. Formation duale : pratique + théorie.</p>
+                        <ul class="action-list">
+                            <li>Mécanique automobile et électricité</li>
+                            <li>Plomberie et électricité bâtiment</li>
+                            <li>Froid industriel et climatisation</li>
+                            <li>Informatique et électronique</li>
+                        </ul>
+                        <div class="action-stat">
+                            <span class="action-stat-number">15</span>
+                            <span>apprentis au CTAP en 2025-2026</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Santé en second — image homme -->
+                <div class="action-card action-card--sante">
+                    <div class="action-card-image">
+                        <img src="images/boursier-angouloumou.jpeg" alt="Angouloumou Alouma, nutritionniste MSF Suisse au camp de réfugiés d'Iriba" loading="lazy">
+                    </div>
+                    <div class="action-card-body">
+                        <h3>Formations en santé</h3>
+                        <p>Infirmières et infirmiers, sages-femmes, nutritionnistes et gestionnaires d'hôpitaux formés dans plusieurs écoles à travers le Tchad.</p>
+                        <ul class="action-list">
+                            <li>Soins infirmiers et obstétrique</li>
+                            <li>Nutrition et santé communautaire</li>
+                            <li>Gestion hospitalière</li>
+                            <li>Sciences biomédicales</li>
+                        </ul>
+                        <div class="action-stat">
+                            <span class="action-stat-number">15</span>
+                            <span>boursières et boursiers en santé en 2025-2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-highlight">
+                <div class="highlight-content">
+                    <div class="highlight-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7h-4l-2-3H6L4 7H2a1 1 0 0 0-1 1v10a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a1 1 0 0 0-1-1Z"/><circle cx="12" cy="14" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h4>Kit d'outils professionnels</h4>
+                        <p>À l'issue de leur formation, les diplômés du CTAP reçoivent un <strong>kit d'outils professionnels</strong> pour démarrer immédiatement leur activité. Un tremplin concret vers l'autonomie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         5b. GALERIE — La fondation en images
+         ============================================ -->
+    <section class="section section-galerie">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">En images</span>
+                <h2 class="section-title">Nos boursières et boursiers en action</h2>
+            </div>
+            <div class="galerie-grid">
+                <!-- F -->
+                <div class="galerie-item">
+                    <img src="images/boursiere-froid-action.jpeg" alt="Boursière en froid et climatisation" loading="lazy">
+                    <div class="galerie-overlay"><span>Froid et climatisation</span></div>
+                </div>
+                <!-- M -->
+                <div class="galerie-item">
+                    <img src="images/boursier-assabaksou.jpeg" alt="Assabaksou Noël Gambo, boursier en mécanique automobile" loading="lazy">
+                    <div class="galerie-overlay"><span>Mécanique automobile</span></div>
+                </div>
+                <!-- F -->
+                <div class="galerie-item">
+                    <img src="images/temoignage-antenne.jpg" alt="Boursière installant une antenne satellite" loading="lazy">
+                    <div class="galerie-overlay"><span>Énergie solaire</span></div>
+                </div>
+                <!-- M -->
+                <div class="galerie-item">
+                    <img src="images/retchadavenirprojetdepvderniresance/IMG_8006.jpeg" alt="Boursier en menuiserie bois au CTAP" loading="lazy">
+                    <div class="galerie-overlay"><span>Menuiserie bois</span></div>
+                </div>
+                <!-- F -->
+                <div class="galerie-item">
+                    <img src="images/retchadavenirprojetdepvderniresance/IMG_8013.jpeg" alt="Boursière réparant un ordinateur" loading="lazy">
+                    <div class="galerie-overlay"><span>Informatique</span></div>
+                </div>
+                <!-- M — wide -->
+                <div class="galerie-item galerie-item--wide">
+                    <img src="images/retchadavenirprojetdepvderniresance/IMG_8002.jpeg" alt="Boursières et boursiers en formation au CTAP de N'Djaména" loading="lazy">
+                    <div class="galerie-overlay"><span>Formation au CTAP</span></div>
+                </div>
+                <!-- F -->
+                <div class="galerie-item">
+                    <img src="images/Tchad_Avenir_papillon_Affiche_-_Copie_image6.png" alt="Boursière en formation professionnelle" loading="lazy">
+                    <div class="galerie-overlay"><span>Formation professionnelle</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         6. ACTUALITÉS — Événements de Tchad-Avenir
+         ============================================ -->
+    <section class="section section-actualites" id="actualites">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Actualités</span>
+                <h2 class="section-title">Les événements de Tchad-Avenir</h2>
+            </div>
+            <div class="actu-grid">
+                <article class="actu-card actu-card--featured">
+                    <div class="actu-image">
+                        <img src="images/AfficheExpoPDF/expo2026.jpg" alt="Affiche exposition Regards sur le Tchad — Olivier Martin, 5-13 juin 2026, Le Mont-sur-Lausanne" loading="lazy">
+                        <span class="actu-badge">Exposition</span>
+                    </div>
+                    <div class="actu-body">
+                        <div class="actu-date">
+                            <span class="actu-day">5–13</span>
+                            <span class="actu-month">juin 2026</span>
+                        </div>
+                        <div class="actu-content">
+                            <h3>Regards sur le Tchad — Exposition photographique</h3>
+                            <p>Olivier Martin présente ses photographies du Tchad dans le cadre d'une exposition à Le Mont-sur-Lausanne. Une plongée dans la réalité humaine et paysagère du pays, en lien direct avec l'engagement de Tchad-Avenir.</p>
+                            <p><strong>Vernissage :</strong> 5 juin 2026 à 17h<br>
+                            <strong>Horaires :</strong> Lu–Ve 13h–19h / Sa–Di 11h–18h<br>
+                            <strong>Lieu :</strong> Mont Local, Route de Lausanne 14, 1052 Le Mont-sur-Lausanne</p>
+                            <a href="AfficheExpoPDF.pdf" target="_blank" class="actu-link">Voir l'affiche (PDF)</a>
+                            <span class="actu-tag">Exposition</span>
+                            <span class="actu-tag">Photographie</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="actu-card">
+                    <div class="actu-image">
+                        <img src="images/conseil-fondation-suisse.jpeg" alt="Séance du Conseil de fondation" loading="lazy">
+                        <span class="actu-badge actu-badge--past">Passé</span>
+                    </div>
+                    <div class="actu-body">
+                        <div class="actu-date">
+                            <span class="actu-day">14</span>
+                            <span class="actu-month">Déc 2025</span>
+                        </div>
+                        <div class="actu-content">
+                            <h3>Séance du Conseil de fondation</h3>
+                            <p>Bilan de l'année 2024-2025, accueil de nouveaux membres et planification de la campagne de collecte 2026.</p>
+                            <span class="actu-tag">Gouvernance</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="actu-card">
+                    <div class="actu-image">
+                        <img src="images/actu-conference.jpg" alt="François Djividi, Président de la Commission des Bourses" loading="lazy">
+                        <span class="actu-badge actu-badge--past">Passé</span>
+                    </div>
+                    <div class="actu-body">
+                        <div class="actu-date">
+                            <span class="actu-day">17</span>
+                            <span class="actu-month">Août 2025</span>
+                        </div>
+                        <div class="actu-content">
+                            <h3>Sélection des boursières et boursiers 2025-2026</h3>
+                            <p>La Commission des Bourses s'est réunie à N'Djaména : 30 nouvelles boursières et nouveaux boursiers sélectionnés dont 12 filles, en santé et métiers techniques.</p>
+                            <span class="actu-tag">Bourses</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         6b. CONNAÎTRE LE TCHAD — Contexte et CTAP
+         ============================================ -->
+    <section class="section section-tchad" id="tchad">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contexte</span>
+                <h2 class="section-title">Connaître le Tchad</h2>
+                <p class="section-desc">Comprendre le contexte, c'est mesurer l'impact de chaque bourse</p>
+            </div>
+            <div class="tchad-grid">
+                <div class="tchad-block">
+                    <h3>La formation professionnelle au Tchad</h3>
+                    <p>Classé parmi les pays les plus pauvres de la planète, le Tchad a un Indice de Développement Humain (IDH) particulièrement faible (0,446). Les jeunes Tchadiennes et Tchadiens ont un accès très limité à la formation professionnelle.</p>
+                    <p>Ce problème s'explique par le faible nombre de structures publiques de formation, mais aussi par le coût très élevé des écolages annuels, pouvant aller de CFA 300 000 à plus de 700 000 (CHF 430 à plus de CHF 1 000), ce qui rend l'accès à la formation quasi impossible aux jeunes de milieu défavorisé. Les orphelins, sans soutien familial, sont doublement discriminés.</p>
+                    <p>Cette situation contraint beaucoup de jeunes à interrompre leurs études après le brevet primaire, parfois même avant. Sans aide extérieure, ils sont contraints de travailler d'abord, avant de reprendre — dans le meilleur des cas — leur formation professionnelle plus tard.</p>
+                </div>
+                <div class="tchad-block">
+                    <h3>Le CTAP de N'Djaména</h3>
+                    <p>Le <strong>Centre Technique d'Apprentissage et de Perfectionnement (CTAP)</strong> est le partenaire clé de Tchad-Avenir pour les formations techniques. Situé à N'Djaména, capitale du Tchad, il propose une formation sur deux ans, caractérisée par une approche duale associant étroitement connaissances théoriques et pratique intensive en atelier.</p>
+                    <p>Les filières proposées — électricité bâtiment, mécanique automobile, maintenance informatique, plomberie, climatisation, menuiserie sur bois et métallique — débouchent sur des métiers très demandés. Un accent est porté sur l'intégration professionnelle et la création de micro-entreprises. À l'issue de la formation, les diplômées et diplômés de Tchad-Avenir reçoivent un kit d'outils professionnels.</p>
+                    <p>Tchad-Avenir collabore étroitement avec le CTAP de N'Djaména depuis plusieurs années pour le volet technique et artisanal de ses bourses.</p>
+                </div>
+            </div>
+            <div class="tchad-map-block">
+                <div class="tchad-map-text">
+                    <h3>Le Tchad dans le monde</h3>
+                    <p>Enclavé au cœur de l'Afrique centrale, le Tchad partage ses frontières avec six pays : la Libye au nord, le Soudan à l'est, la République centrafricaine et le Cameroun au sud, le Niger et le Nigeria à l'ouest. N'Djaména, la capitale, est le centre de la vie économique et institutionnelle.</p>
+                    <p>Pays sahélien, le Tchad est régulièrement confronté à des sécheresses, à l'insécurité alimentaire et à des déplacements de population. C'est dans ce contexte difficile que Tchad-Avenir maintient son engagement depuis plus de 20 ans.</p>
+                </div>
+                <div class="tchad-map-img">
+                    <img src="images/carte-tchad-afrique.svg" alt="Le Tchad dans le continent africain" loading="lazy">
+                    <p class="map-credit">Carte : <a href="https://commons.wikimedia.org/wiki/File:Chad_in_Africa_(-mini_map_-rivers).svg" target="_blank" rel="noopener">Wikimedia Commons</a> — CC BY-SA 3.0 TUBS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         7. LA FONDATION — Histoire et gouvernance
+         ============================================ -->
+    <section class="section section-fondation" id="fondation">
+        <div class="container">
+            <!-- Histoire et mission -->
+            <div class="fondation-mission">
+                <div class="mission-image-block">
+                    <div class="emotion-image emotion-image--mission">
+                        <img src="images/retchadavenirprojetdepvderniresance/IMG_7998.jpeg" alt="Formation technique au CTAP de N'Djaména" loading="lazy">
+                    </div>
+                </div>
+                <div class="mission-text-block">
+                    <span class="section-label">Notre histoire</span>
+                    <h2 class="section-title">Offrir un avenir par la formation</h2>
+                    <blockquote class="mission-quote">
+                        &laquo; La fondation veut pérenniser et développer une action qui répond à un grand besoin : des bourses attribuées à des étudiants et apprentis de milieu modeste qui n'ont pas les moyens de poursuivre leur formation dans de bonnes conditions. &raquo;
+                        <cite>Acte de fondation, 2004</cite>
+                    </blockquote>
+                    <p>La fondation Tchad-Avenir (FTA) a été créée en 2004 par Geneviève Pillet, en collaboration avec Jean-Paul M'Batna et Charly Maurer. La fondatrice a travaillé au Tchad pendant plus de 30 ans dans les domaines de l'éducation, du développement communautaire et du soutien aux familles paysannes menacées par la prospection pétrolifère. C'est donc sur la base d'expériences professionnelles vécues que Tchad-Avenir a été créée, avec un réseau de Tchadiennes et Tchadiens engagés.</p>
+                    <div class="mission-values-row">
+                        <div class="value-pill">Éducation</div>
+                        <div class="value-pill">Équité</div>
+                        <div class="value-pill">Proximité</div>
+                        <div class="value-pill">Durabilité</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conseil de fondation -->
+            <div class="conseil-section">
+                <h3 class="conseil-title">Le Conseil de fondation</h3>
+                <p class="conseil-subtitle">Un conseil bénévole basé en Suisse, engagé depuis plus de 20 ans</p>
+                <p class="conseil-desc">Le Conseil de fondation est chargé de la recherche de fonds et de la gestion financière. Il définit les modalités des activités sur le terrain et en vérifie la mise en œuvre. Il assure la liaison avec la Commission des Bourses et avec les instances de contrôle suisses — la Surveillance des fondations de la Confédération et le Registre du Commerce du canton de Genève — ainsi qu'avec les donateurs institutionnels.</p>
+
+                <div class="conseil-row conseil-row--top">
+                    <div class="conseil-member conseil-member--president">
+                        <div class="member-avatar member-avatar--president">ZH</div>
+                        <h4>Zorrino Haroun</h4>
+                        <span class="member-role member-role--president">Président</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">AG</div>
+                        <h4>Anne-Françoise Giovannoni</h4>
+                        <span class="member-role">Trésorière</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">CM</div>
+                        <h4>Charly Maurer</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar member-avatar--accent">NG</div>
+                        <h4>Natacha Gotoraye</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                </div>
+
+                <div class="conseil-row conseil-row--bottom">
+                    <div class="conseil-member">
+                        <div class="member-avatar">GP</div>
+                        <h4>Geneviève Pillet</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">JM</div>
+                        <h4>Jean-Paul M'Batna</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">OM</div>
+                        <h4>Olivier Martin</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commission des Bourses -->
+            <div class="conseil-section conseil-section--cdb">
+                <h3 class="conseil-title">La Commission des Bourses</h3>
+                <p class="conseil-subtitle">L'instance opérationnelle de Tchad-Avenir au Tchad, basée à N'Djaména</p>
+                <p class="conseil-desc">La Commission des Bourses est chargée de la mise en œuvre des décisions du Conseil de fondation : sélection des boursières et boursiers sur dossier documenté, suivi des bénéficiaires sur le plan du travail et des résultats, et gestion financière des activités sur le terrain. La plupart de ses membres ont eux-mêmes bénéficié d'un soutien de Tchad-Avenir, ce qui renforce la pérennité des activités et ancre la fondation dans les réalités du pays.</p>
+
+                <div class="conseil-row conseil-row--top">
+                    <div class="conseil-member conseil-member--president">
+                        <div class="member-avatar member-avatar--president">FD</div>
+                        <h4>François Djividi</h4>
+                        <span class="member-role member-role--president">Président</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">NA</div>
+                        <h4>Ndak-Missou Narcisse Augustin</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">MT</div>
+                        <h4>M'Batna Togozia</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">DN</div>
+                        <h4>Dr Bureau Nestor Djimarem</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                </div>
+                <div class="conseil-row conseil-row--bottom">
+                    <div class="conseil-member">
+                        <div class="member-avatar">RK</div>
+                        <h4>Remy Krazidi M'batna</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                    <div class="conseil-member">
+                        <div class="member-avatar">BA</div>
+                        <h4>Bealem Aristide</h4>
+                        <span class="member-role">Membre</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         8. FAIRE UN DON — L'appel à l'action
+         ============================================ -->
+    <section class="section section-don" id="don">
+        <div class="container">
+            <div class="don-hero">
+                <img class="don-hero-image" src="images/groupe-merci-fondation.jpeg" alt="Boursières et boursiers de la fondation Tchad-Avenir" loading="lazy">
+                <div class="don-hero-overlay"></div>
+                <div class="don-hero-content">
+                    <span class="section-label section-label--light">Soutenir</span>
+                    <h2 class="section-title section-title--light">Avec CHF 725, vous financez une année de formation</h2>
+                    <p class="don-hero-desc">Chaque contribution, quelle que soit sa taille, transforme la vie d'un jeune tchadien. Votre don est <strong>déductible fiscalement</strong> en Suisse.</p>
+                </div>
+            </div>
+
+            <div class="don-grid don-grid--3">
+                <div class="don-card don-card--highlight">
+                    <h3>Don par virement bancaire</h3>
+                    <p>Le moyen le plus direct de soutenir Tchad-Avenir :</p>
+                    <div class="don-details">
+                        <div class="don-detail">
+                            <span class="don-label">Titulaire</span>
+                            <span class="don-value">Fondation Tchad-Avenir</span>
+                        </div>
+                        <div class="don-detail">
+                            <span class="don-label">IBAN</span>
+                            <span class="don-value don-iban" id="iban">CH05 0078 8000 C327 5911 9</span>
+                            <button class="btn-copy" onclick="copyIBAN()" title="Copier l'IBAN">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            </button>
+                        </div>
+                        <div class="don-detail">
+                            <span class="don-label">Banque</span>
+                            <span class="don-value">Banque CIC (Suisse) SA, Genève</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="don-card don-card--twint">
+                    <div class="twint-header">
+                        <svg class="twint-logo" viewBox="0 0 120 40" width="120" height="40">
+                            <rect width="120" height="40" rx="8" fill="#000"/>
+                            <text x="60" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="18" fill="#fff">TWINT</text>
+                        </svg>
+                    </div>
+                    <h3>Don par TWINT</h3>
+                    <p>Scannez le QR code ci-dessous avec votre app TWINT pour faire un don rapide et sécurisé.</p>
+                    <div class="twint-qr-placeholder">
+                        <div class="twint-qr-box">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="4" height="4"/><line x1="21" y1="14" x2="21" y2="21"/><line x1="14" y1="21" x2="21" y2="21"/></svg>
+                            <span>QR Code TWINT<br><small>À ajouter</small></span>
+                        </div>
+                    </div>
+                    <p class="don-note don-note--twint">Rapide, gratuit et sécurisé. Disponible avec toutes les banques suisses.</p>
+                </div>
+                <div class="don-card">
+                    <h3>Ce que votre don finance</h3>
+                    <div class="don-amounts">
+                        <div class="don-amount">
+                            <span class="amount-value">CHF 50</span>
+                            <span class="amount-desc">Matériel scolaire pour un étudiant</span>
+                        </div>
+                        <div class="don-amount">
+                            <span class="amount-value">CHF 200</span>
+                            <span class="amount-desc">Kit d'outils professionnels pour un diplômé CTAP</span>
+                        </div>
+                        <div class="don-amount don-amount--featured">
+                            <span class="amount-value">CHF 725</span>
+                            <span class="amount-desc">Une année complète de formation</span>
+                        </div>
+                        <div class="don-amount">
+                            <span class="amount-value">CHF 1'450</span>
+                            <span class="amount-desc">Formation complète d'un apprenti (2 ans)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="don-budget">
+                <h3>Budget annuel transparent</h3>
+                <p>Auditée par BEAU HLB SA, Genève. Supervisée par la Surveillance fédérale des fondations.</p>
+                <div class="budget-bar">
+                    <div class="budget-segment budget-segment--bourses" style="width: 68%"><span>Écolages et matériel 68%</span></div>
+                    <div class="budget-segment budget-segment--kits" style="width: 9%"><span>Kits</span></div>
+                    <div class="budget-segment budget-segment--suivi" style="width: 11%"><span>Intégration</span></div>
+                    <div class="budget-segment budget-segment--admin" style="width: 12%"><span>Administration</span></div>
+                </div>
+                <div class="budget-legend">
+                    <span><span class="budget-dot budget-dot--bourses"></span>Écolages et matériel scolaire 68%</span>
+                    <span><span class="budget-dot budget-dot--kits"></span>Kit outils professionnels 9%</span>
+                    <span><span class="budget-dot budget-dot--suivi"></span>Intégration professionnelle 11%</span>
+                    <span><span class="budget-dot budget-dot--admin"></span>Administration et évaluation 12%</span>
+                </div>
+                <p class="budget-total">Budget 2026-2027 : <strong>CHF 32'000</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         9. CONTACT
+         ============================================ -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Parlons ensemble</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Fondation Tchad-Avenir<br>Genève, Suisse</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:contact@tchadavenir.ch">contact@tchadavenir.ch</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <div>
+                            <h4>Informations légales</h4>
+                            <p>Fondation de droit suisse (Stiftung)<br>Inscrite au Registre du Commerce de Genève</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <h3>Envoyer un message</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.ch">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject">
+                            <option value="don">Don / Soutien</option>
+                            <option value="info">Demande d'information</option>
+                            <option value="bourse">Demande de bourse</option>
+                            <option value="partenariat">Partenariat</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#accueil" class="logo logo--footer">
+                        <img class="logo-icon-img" src="images/logo-tchad.png" alt="Carte du Tchad">
+                        <div class="logo-text">
+                            <span class="logo-name">Fondation Tchad-Avenir</span>
+                        </div>
+                    </a>
+                    <p>Depuis 2004, nous soutenons la formation de jeunes tchadiens de milieu modeste par l'octroi de bourses d'études et d'apprentissage.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#impact">Nos résultats</a>
+                    <a href="#temoignages">Des vies transformées</a>
+                    <a href="#actions">Nos Actions</a>
+                    <a href="#actualites">Actualités</a>
+                    <a href="#tchad">Connaître le Tchad</a>
+                    <a href="#fondation">La fondation</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-don">
+                    <h4>Soutenir Tchad-Avenir</h4>
+                    <p>IBAN : CH05 0078 8000 C327 5911 9</p>
+                    <p>Banque CIC (Suisse) SA, Genève</p>
+                    <a href="#don" class="btn btn-primary btn-sm">Faire un don</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2004-2026 Fondation Tchad-Avenir, Genève. Tous droits réservés.</p>
+                <p>Fondation de droit suisse supervisée par la Surveillance fédérale des fondations</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
